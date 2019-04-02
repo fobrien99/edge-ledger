@@ -25,9 +25,18 @@ p {
     overflow: hidden;
 }
 
-
 .text-primary {
     color: #93cb52
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
 }
 
 .text-center {
@@ -41,7 +50,7 @@ p {
 }
 
 .m-heading {
-    font-size: 2rem;
+    font-size: 2rem; 
     margin-bottom: 0.75rem;
     line-height: 1.1;
 }
@@ -49,6 +58,10 @@ p {
 .py-1 {padding: 1.5rem 0;}
 .py-2 {padding: 2rem 0;}
 .py-3 {padding: 3rem 0;}
+
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
 
 .lead {
     font-size: 1.3rem;
@@ -67,9 +80,6 @@ p {
 .btn:hover {
     background: #7ab436;
 }
-
-
-
 
 /* Navbar */
 #navbar {
@@ -123,3 +133,56 @@ p {
 }
 
 /* Section: What we do */
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Who We Are */
+/* id who is the flex container */
+#who {
+    display: flex;
+    
+}
+
+#who div {
+    flex: 1;
+}
+
+#who .who-img {
+    background: url(../img/people.jpg) no-repeat center center/cover;
+}
+
+.list {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+/* Clients */
+#clients .items {
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
