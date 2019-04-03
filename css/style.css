@@ -91,16 +91,22 @@ p {
     background: #7ab436;
 }
 
+.btn-dark:hover {
+    background: rgb(23, 23, 23);
+    color: #fff;
+    font-size: 0.75rem;
+}
 /* Navbar */
 #navbar {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0; 
     background: #333;
     color: #fff;
     justify-content: space-between;
     z-index: 1;
     padding: 1rem;
+    width: 100%;
 }
 
 #navbar ul {
@@ -139,6 +145,8 @@ p {
     position: relative;
     top: 0px;
     left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0,0,0,0.4);
 }
 
